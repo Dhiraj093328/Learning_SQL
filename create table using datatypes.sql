@@ -1,6 +1,7 @@
 
 use test1;
 -- create table using datatypes --
+drop table emp; -- if exsist--
 create table emp(
 e_id int,
 F_name varchar(20),
