@@ -37,7 +37,7 @@ select * from student;
 
 -- change records in existing table --
  
-SET SQL_SAFE_UPDATES = 0;    -- ->(needs to run befor change or update record) --
+SET SQL_SAFE_UPDATES = 0;    -- ->(-- 0 for security off for Update table  --) --
 
 UPDATE student 
 SET F_name = 'Pratik', 
@@ -64,5 +64,7 @@ WHERE s_id = 105;
 -- delete row from exsisting table  -- 
 
 DELETE FROM student WHERE s_id = 104;
+
+SET SQL_SAFE_UPDATES = 1; -- ->(-- 1 for security on for Update table  --) --
 
 
