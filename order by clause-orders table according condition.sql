@@ -35,6 +35,7 @@ limit 1 offset 1;       -- only one 2nd highest price want so use "offset" keywo
 
 
 
+
 -- in the above case only price show cant show name so i want tofind 2nd highest price with name --
 
  
@@ -46,6 +47,7 @@ WHERE price = (
     ORDER BY price DESC
     LIMIT 1 OFFSET 1
 );
+
 
 
 
