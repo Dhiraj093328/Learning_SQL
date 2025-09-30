@@ -1,4 +1,4 @@
--- Comparison Operators ->   < , > , = , <= , >= , != --
+-- Comparison Operators ->   < , > , = , <= , >= , !=,<> --
 
 -- Display products price only greater than 100 --
 select `index`, name,price from products where price > 100
@@ -14,5 +14,13 @@ FROM products
 WHERE price < 200;
 
 -- find a product which has price is exactly 74 --
+select `index`, name,price from products where price = 74;
+
+-- find a product which has price not equal to 74 --
+select `index`, name,price from products where price != 74;
+select `index`, name,price from products where price <> 74;  -- !=,<> both symbols use for not equal to 
+
+
+
  
 
